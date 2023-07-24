@@ -1,1 +1,460 @@
+  /*
+  Style for: everything
+  Thanks to the maker: Me
+  Edits: Me
+  Todo: []
+  */
 
+ html, body {
+     margin: 0;
+     padding: 0;
+   overflow-x: hidden;
+}
+ .avatar {
+     width: 30px;
+     height: 30px;
+     border-radius: 50%;
+     margin-left: 300px;
+     position: relative;
+     top: 39px;
+}
+ body {
+     background-color: rgb(18,19,25);
+     font-family: 'Open Sans', sans-serif;
+     color: white;
+}
+ .todo {
+     font-size: 18px;
+     width: 100%;
+     font-family: Arial, sans-serif;
+     background: none;
+     outline: none;
+     border: none;
+     padding: none;
+     margin: none;
+     color: white;
+     margin: 0 auto;
+     display: block;
+     width: 50%;
+}
+ input {
+     border: none;
+     outline: none;
+     background: transparent;
+     color: white;
+}
+ #noteWindow {
+     background-color: #212532;
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     overflow-x: hidden;
+}
+ #createit i {
+     font-size: 20px;
+     margin-left: 20px;
+}
+ #noteWindow #titleofnote {
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     -ms-appearance: none;
+     -o-appearance: none;
+     appearance: none;
+     font-size: 40px;
+     width: 100%;
+     background: none;
+     outline: none;
+     border: none;
+     color: white;
+     margin: 0 auto;
+     display: block;
+     width: 50%;
+     margin-bottom: 1px;
+     margin-top: 10px;
+}
+ #noteWindow .desofnote, #desofnote {
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     -ms-appearance: none;
+     -o-appearance: none;
+     appearance: none;
+     font-size: 18px;
+     width: 100%;
+     font-family: Arial, sans-serif;
+     background: none;
+     outline: none;
+     border: none;
+     padding: none;
+     margin: none;
+     color: white;
+     margin: 0 auto;
+     display: block;
+     width: 50%;
+}
+ #notes-container a {
+     color: #DDDEDE;
+     text-decoration: none;
+     font-size: 16px;
+     margin-bottom: 10px;
+     display: block;
+}
+ #notes-container a:hover {
+     color: #fff;
+}
+ .note-title {
+     font-size: 22px;
+     margin-bottom: 10px;
+     text-decoration: none;
+     color: #DDDEDE;
+}
+ .note-description {
+     font-size: 16px;
+     color: #5E5E6D;
+}
+ #notes-container {
+     width: 100%;
+     display: flex;
+     flex-wrap: wrap;
+     align-content: flex-start;
+       margin-left: 23px;
+}
+ @media only screen and (min-width: 768px) {
+    /* pc */
+     .sein {
+         -webkit-appearance: none;
+         -moz-appearance: none;
+         -ms-appearance: none;
+         -o-appearance: none;
+         appearance: none;
+         width: 900px;
+         height: 40px;
+         border: none;
+         border-radius: 20px;
+         background-color: #212532;
+         outline: none;
+         color: white;
+         padding-left: 67px;
+         display: block;
+         margin-right: auto;
+         margin-left: auto;
+    }
+     .note-square {
+         height: calc(30% - 100%);
+         width: 20%;
+         background-color: none;
+         padding: 20px;
+         margin: 10px;
+         transition: 0.3s;
+         border-radius: 5px;
+         outline: #212532 4px solid;
+         box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+         cursor:pointer;
+    }
+     .createbtn {
+         position: fixed;
+         top: 640px;
+         right: 20px;
+         background-color: #212532;
+         height: 65px;
+         width: 65px;
+         font-size: 26px;
+         cursor: pointer;
+         color: white;
+         border: none;
+         border-radius: 8px;
+         outline: none;
+    }
+     .note-square:hover {
+         height: calc(30% - 100%);
+         width: 20%;
+         background-color: #212532;
+         padding: 20px;
+         margin: 10px;
+         transition: 0.3s;
+         border-radius: 5px;
+         box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+         cursor:pointer;
+    }
+}
+ #createit {
+     padding-top: 14px;
+     padding-left: 14px;
+}
+ @media only screen and (max-width: 767px) {
+    /* mob */
+     .note-square {
+         height: calc(30% - 100%);
+         width: 30%;
+         background-color: none;
+         padding: 20px;
+         margin: 10px;
+         margin-left: auto;
+         margin-right: auto;
+         border-radius: 5px;
+         outline: #212532 4px solid;
+         box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+         cursor:pointer;
+    }
+     .createbtn {
+         position: fixed;
+         top: 360px;
+         right: 20px;
+         background-color: #212532;
+         height: 55px;
+         width: 55px;
+         font-size: 26px;
+         cursor: pointer;
+         color: white;
+         border: none;
+         border-radius: 8px;
+         outline: none;
+    }
+     .note-square:hover {
+         height: calc(30% - 100%);
+         width: 30%;
+         background-color: #212532;
+         padding: 20px;
+         margin: 10px;
+         margin-left: auto;
+         margin-right: auto;
+         transition: 0.3s;
+         border-radius: 5px;
+         box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+         cursor:pointer;
+    }
+     .sein {
+         -webkit-appearance: none;
+         -moz-appearance: none;
+         -ms-appearance: none;
+         -o-appearance: none;
+         appearance: none;
+         width: 270px;
+         height: 40px;
+         margin-top: -16px;
+         border: none;
+         border-radius: 20px;
+         background-color: #212532;
+         outline: none;
+         color: white;
+         padding-left: 58px;
+         display: block;
+         margin-right: auto;
+         margin-left: auto;
+    }
+     .avatar {
+         width: 30px;
+         height: 30px;
+         border-radius: 50%;
+         margin-left: 37px;
+         position: relative;
+         top: 24px;
+    }
+   #notes-container {
+     margin-left: 0px
+   }
+}
+ ::placeholder {
+     color: #b3b3b3;
+     opacity: 1;
+}
+ :-ms-input-placeholder, ::-ms-input-placeholder {
+     color: #b3b3b3;
+}
+
+  /*
+  Style for: highlighting codes
+  Thanks to the maker: Michaël Ball (http://github.com/michael-ball/)
+  Edits: Me
+  Todo: []
+  */
+
+  @media only screen and (max-width: 767px) {
+    pre {
+      margin: auto 5em;
+    }
+
+    .langsel {
+      margin: auto 5em;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    pre {
+      margin: auto 26em;
+    }
+    
+    .langsel {
+      margin: auto 25.6em;
+    }
+  }
+  .langsel {
+    background: #050608;
+    color: #c1c3c4;
+    display: block;
+    padding: 1em;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+  }
+  
+  pre {
+    margin-top: 2px;
+    margin-bottom: 4px;
+    outline: none;
+    padding: 1em;
+    overflow-x: auto;
+    border: none;
+    border-radius: 7px;
+    background: #050608;
+}
+
+code.hljs {
+    padding: 3px 5px;
+    color: #c1c3c4;
+}
+
+code.hljs::selection, pre::selection {
+    background-color: #28292a;
+    color: #c1c3c4;
+}
+
+.hljs-comment {
+    color: #474849;
+}
+
+.hljs-tag {
+    color: #a3a5a6;
+}
+
+.hljs-operator, .hljs-punctuation, .hljs-subst {
+    color: #c1c3c4;
+}
+
+.hljs-operator {
+    opacity: .7;
+}
+
+.hljs-bullet, .hljs-deletion, .hljs-name, .hljs-selector-tag, .hljs-template-variable, .hljs-variable {
+    color: #b53b50;
+}
+
+.hljs-attr, .hljs-link, .hljs-literal, .hljs-number, .hljs-symbol, .hljs-variable.constant_ {
+    color: #ea770d;
+}
+
+.hljs-class .hljs-title, .hljs-title, .hljs-title.class_ {
+    color: #c9d364;
+}
+
+.hljs-strong {
+    font-weight: 700;
+    color: #c9d364;
+}
+
+.hljs-addition, .hljs-code, .hljs-string, .hljs-title.class_.inherited__ {
+    color: #06ea61;
+}
+
+.hljs-built_in, .hljs-doctag, .hljs-keyword.hljs-atrule, .hljs-quote, .hljs-regexp {
+    color: #42fff9;
+}
+
+.hljs-attribute, .hljs-function .hljs-title, .hljs-section, .hljs-title.function_, .ruby .hljs-property {
+    color: #03aeff;
+}
+
+.diff .hljs-meta, .hljs-keyword, .hljs-template-tag, .hljs-type {
+    color: #ea5ce2;
+}
+
+.hljs-emphasis {
+    color: #ea5ce2;
+    font-style: italic;
+}
+
+.hljs-meta, .hljs-meta .hljs-keyword, .hljs-meta .hljs-string {
+    color: #cd6320;
+}
+
+.hljs-meta .hljs-keyword, .hljs-meta-keyword {
+    font-weight: 700;
+}
+
+  /*
+  Style for: Note App
+  Thanks to the maker: Me
+  Edits: Me
+  Todo: []
+  */
+
+#createit i {
+     font-size: 20px;
+     margin-left: 20px;
+    }
+
+    .addBtn {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  width: 200px;
+}
+
+      .pra {
+        font-size: 18px;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  background: none;
+  outline: none;
+  border: none;
+  padding: none;
+  margin: none;
+  color: white;
+  margin: 0 auto;
+  display: block;
+  width: 50%;
+      }
+
+      .todo {
+        font-size: 18px;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  background: none;
+  outline: none;
+  border: none;
+  padding: none;
+  margin: none;
+  color: white;
+  margin: 0 auto;
+  display: block;
+  width: 50%;
+      }  
+
+    input {
+      border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+    }
+      
+      .header {
+        font-size: 40px;
+  width: 100%;
+  background: none;
+  outline: none;
+  border: none;
+  margin: 0 auto;
+  display: block;
+  width: 50%;
+  margin-bottom: 7px;
+  margin-top: 10px;
+      }
