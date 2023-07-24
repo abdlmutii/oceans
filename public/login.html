@@ -1,1 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Login | Oceans</title>
+    <meta property="og:title" content="Oceans | Login">
+<meta property="og:description" content="Our private notes service is a secure and user-friendly platform for taking notes and organizing your thoughts. Unlike other note-taking apps, we prioritize your privacy and take extensive measures to ensure that your notes are completely private and secure">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#00a8e6">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+   
+    <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
+   <div class="text-center text-4xl mb-8 font-bold mt-6">Welcome back!</div> 
 
+  <div class="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
+    <form class="space-y-6" id="login-form" onsubmit="return false;">
+      <div>
+        <label for="emorus" class="block text-sm font-medium text-gray-700">
+          Email address, or username.
+        </label>
+        <div class="mt-1">
+          <input
+            id="emorus"
+            name="emorus"
+            type="email"
+            autocomplete="email"
+            required
+            class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+          />
+        </div>
+      </div>
+
+      <div>
+        <label for="password" class="block text-sm font-medium text-gray-700">
+          Password
+        </label>
+        <div class="mt-1">
+          <input
+            id="password"
+            name="password"
+            type="password"
+            autocomplete="current-password"
+            required
+            class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+          />
+        </div>
+      </div>
+
+      <div>
+        <button
+          onclick="(() => login())();"
+          type="submit"
+          class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+        >
+          Sign in
+        </button>
+      </div>
+      <div class="text-red-500 text-center" id="error"></div>
+    </form>
+  </div>
+    </div>
+    <script src="login.js"></script>
+  </body>
+</html>
