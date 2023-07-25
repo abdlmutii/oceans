@@ -3,3 +3,8 @@ Our private notes service is a secure and user-friendly platform for taking note
 
 # Try it
 https://oceans.abdlmutii.repl.co
+
+# Self-Hosting it?
+Change `htmll` extensions into `html`
+Change `ctyle` extetnsion into `css`
+Change `e.js` extensions into `ejs`
